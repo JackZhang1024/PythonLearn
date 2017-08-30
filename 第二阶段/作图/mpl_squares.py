@@ -1,5 +1,9 @@
 # -*- coding:utf-8 -*-
 
+"""
+Python3 Use only
+"""
+
 import matplotlib.pyplot as plt
 squares = [1, 4, 9, 16, 25]
 plt.plot(squares)

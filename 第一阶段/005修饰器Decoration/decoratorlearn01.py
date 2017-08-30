@@ -18,8 +18,10 @@ def log(text):
     return decorator
 
 
-@log('test')
+@log
+# @log('test')
 def now():
     print('2017-03-01')
-now()
+
+now('jack')
 

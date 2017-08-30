@@ -17,12 +17,12 @@ conn=mysql.connector.connect(user='root',password='123456',database='test')
 # conn.commit()
 # cursor.close()
 
-#进行查询操作
-#注意：查询后面的 '1'后面有个,号
-cursor=conn.cursor()
+# 进行查询操作
+# 注意：查询后面的 '1'后面有个,号
+cursor = conn.cursor()
 cursor.execute('select * from user where id=%s',('1',))
-values=cursor.fetchall()
+values = cursor.fetchall()
 print('result %s ' % values)
-#关闭cursor和connection
+# 关闭cursor和connection
 cursor.close()
 conn.close()
