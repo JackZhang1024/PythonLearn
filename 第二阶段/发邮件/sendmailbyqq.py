@@ -38,9 +38,9 @@ def send_mail_qq():
         s.connect(mail_host, port)
         s.login(user, pwd)
         s.sendmail(sender, receivers, message.as_string())
-        print('发送邮件成功！！')
+        print('Success')
     except smtplib.SMTPException as e:
-        print('发送邮件失败！！', e)
+        print('Fail', e)
 
 
 def create_receivers():

@@ -8,6 +8,7 @@ while True:
     try:
         buf = connection.recv(1024)
         if str(buf):
+            print str(buf)
             connection.send('welcome to server')
         else:
             connection.send('please go out!')
