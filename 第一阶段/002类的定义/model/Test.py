@@ -1,8 +1,8 @@
 # -*- coding:utf-8 -*-
 
-from model.Animal import Animal
-from model.Cat import Cat
-from model.Dog import Dog
+from Animal import Animal
+from Cat import Cat
+from Dog import Dog
 
 animal=Animal('pip','gray')
 animal.run()

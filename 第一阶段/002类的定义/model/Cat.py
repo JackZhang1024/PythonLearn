@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 # 原来Python也有包这一说法啊
-from model.Animal import Animal
+from Animal import Animal
 
 class Cat(Animal):
 

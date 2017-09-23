@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-#Python模板
+# Python模板
 
 import time
 import datetime

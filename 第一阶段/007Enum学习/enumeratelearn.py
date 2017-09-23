@@ -9,16 +9,11 @@
 @contact: zhangfengzhou@aragoncs.com
 @site: http://github.com/zhangfengzhou
 @software: PyCharm
-@file: fabcon.py
-@time: 2017/9/21 8:22
+@file: enumeratelearn.py
+@time: 2017/9/23 12:50
+@description:
 """
 
-
-def fun(n):
-    a = b = 1
-    for i in range(1, n):
-        yield a
-        a, b = b, a+b
-
-for index in fun(4):
-    print index
+fruits = ['apple', 'orange', 'pear', 'peach']
+for i, j in enumerate(fruits):
+    print i, j

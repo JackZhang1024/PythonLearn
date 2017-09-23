@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
-from model.Animal import Animal
+
+from Animal import Animal
 
 class Dog(Animal):
 
