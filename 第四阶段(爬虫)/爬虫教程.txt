@@ -1,0 +1,15 @@
+https://piaosanlang.gitbooks.io/spiders/
+
+Linux环境下的多进程
+
+import os
+
+if __name__ == '__main__':
+   print 'current process (%s) start '% (os.getpid())
+   pid = os.fork()
+   if pid < 0:
+       print 'Error happens'
+   elif pid == 0:
+       print 'I am child process (%s) and parent process is (%s)' % (os.getpid(), os.getppid())
+   else:
+       print 'I(%s) create child process (%s)' % (os.getpid(), pid)

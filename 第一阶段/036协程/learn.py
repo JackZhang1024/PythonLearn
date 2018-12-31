@@ -16,11 +16,11 @@
 
 
 def grep(pattern):
-    print 'pattern is ', pattern
+    print('pattern is ', pattern)
     while True:
         line = (yield)
         if pattern in line:
-            print line
+            print(line)
 
 search = grep('love')
 next(search)

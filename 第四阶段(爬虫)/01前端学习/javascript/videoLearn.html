@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频学习</title>
+</head>
+<body>
+<!--<video id="video" controls="controls">浏览器不支持该视频
+    <source src="raw/huazexiangcai.mp4">
+</video>-->
+<div align="center">
+    <video id="video">浏览器不支持该视频
+        <source src="raw/huazexiangcai.mp4">
+    </video>
+    <br>
+    <button onclick="clickVideo()">Play/Pause</button>
+    <button onclick="clickBig()">Big</button>
+    <button onclick="clickSmall()">Small</button>
+</div>
+<script>
+    var video = document.getElementById("video")
+    function clickVideo() {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+    function clickBig() {
+        video.width = 800;
+        video.height = 800;
+    }
+    function clickSmall() {
+        video.width = 400;
+        video.height = 400;
+    }
+</script>
+</body>
+</html>

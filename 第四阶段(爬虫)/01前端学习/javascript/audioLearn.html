@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音频学习</title>
+</head>
+<body>
+<button onclick="playMusic()">播放音乐</button>
+<!-- <audio id="audio" src="raw/JayMarriage.mp3" controls="controls">音乐播放</audio>-->
+<audio id="audio" src="raw/JayMarriage.mp3">音乐播放</audio>
+<script>
+    var audio = document.getElementById("audio")
+    function playMusic() {
+        if (audio.paused) {
+            audio.play()
+        } else {
+            audio.pause()
+        }
+    }
+</script>
+</body>
+</html>
